@@ -30,6 +30,9 @@ export default function RootLayout({
           />
         </div>
         <main>{children}</main>
+        <footer className="text-center py-4 text-sm text-gray-500">
+          &copy; {new Date().getFullYear()} Next JS Development. All rights reserved.
+        </footer>
       </body>
     </html>
   );
