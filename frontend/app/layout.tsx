@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import LightRays from "@/components/ui/LightRays";
-import Navbar from "@/components/pages/Navbar";
+import { Navbar, Footer } from "@/components/pages/index";
 
 export const metadata: Metadata = {
   title: "Next JS Development",
@@ -10,29 +10,28 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        <Navbar/>
-        <div className="absolute inset-0 top-0 z-[-1] min-h-screen">
+      <body className="relative min-h-screen flex flex-col">
+        <Navbar />
+
+        <div className="absolute inset-0 z-[-1] min-h-screen">
           <LightRays
             raysColor="#5dfeca"
             raysSpeed={1.5}
             lightSpread={0.8}
             rayLength={1.2}
-            followMouse={true}
+            followMouse
             mouseInfluence={0.1}
             noiseAmount={0.1}
             distortion={0.05}
           />
         </div>
-        <main>{children}</main>
-        <footer className="text-center py-4 text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} Next JS Development. All rights reserved.
-        </footer>
+        <main className="flex-1">{children}</main>
+      <Footer />
       </body>
     </html>
   );

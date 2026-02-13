@@ -9,6 +9,16 @@ export type EventItem = {
   time: string;
 };
 
+export const navLinks = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Our Team", href: "/team" },
+  { label: "Practice Areas", href: "/practice-areas" },
+  { label: "Insights", href: "/insights" },
+  { label: "FAQs", href: "/faqs" },
+  { label: "Contact", href: "/contact" },
+];
+
 export const events = [
   {
     image: "/images/event1.png",
