@@ -68,12 +68,12 @@ export const posts: Blog[] = [
     slug: "introduction-to-nextjs",
     title: "Introduction to Next.js",
     content: `
-• Built on top of React  
-• Supports Server-Side Rendering (SSR)  
-• Supports Static Site Generation (SSG)  
-• Includes built-in API routes  
-• Optimized for performance and SEO  
-• Great developer experience out of the box
+Built on top of React 
+Supports Server-Side Rendering (SSR)  
+Supports Static Site Generation (SSG)  
+Includes built-in API routes  
+Optimized for performance and SEO  
+Great developer experience out of the box
 `,
     published: true,
     author: "John Doe",
@@ -187,12 +187,12 @@ export const posts: Blog[] = [
     slug: "environment-variables-in-nextjs",
     title: "Environment Variables in Next.js",
     content: `
-• Store API keys securely  
-• Keep database URLs private  
-• Use NEXT_PUBLIC_ for client variables  
-• Prevent exposing sensitive data  
-• Easy configuration with .env files  
-• Recommended for production apps
+Store API keys securely  \n
+Keep database URLs private  
+Use NEXT_PUBLIC_ for client variables  
+Prevent exposing sensitive data  
+Easy configuration with .env files  
+Recommended for production apps
 `,
     published: false,
     author: "",
